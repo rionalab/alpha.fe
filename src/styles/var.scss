@@ -1,0 +1,21 @@
+// color
+$color-primary: #0073ff;
+$color-secondary: #c8102e;
+$black: black;
+
+// other
+$border-radius: 4px;
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+
+// fonts
+$font-primary: 'Noto Sans', sans-serif;
+
+@mixin paragraph {
+   font-size: 13px;
+   color: #1e1e1e;
+   font-family: $font-primary;
+   margin-bottom: 24px;
+   margin-top: 0;
+   line-height: 22px;
+   font-weight: 400;
+}

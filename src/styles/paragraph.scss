@@ -1,0 +1,9 @@
+.paragraph {
+   @include paragraph;
+   &.theme-primary {
+      color: $color-primary;
+   }
+   &.theme-secondary {
+      color: $color-secondary;
+   }
+}

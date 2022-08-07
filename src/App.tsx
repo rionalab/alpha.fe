@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import Button from 'comps/button'
+import Box from 'comps/box'
+import { ETheme } from 'utils/types.global'
+import Paragraph from 'comps/paragraph'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <Box className="shadow">
+         <Paragraph theme={ETheme.SECONDARY}>
+            As a front-end developer with commercial experience with Vue.js,
+            I’ve got something to say about the disadvantages of this framework.
+            — 💡 Disclaimer: Please mind that these are just my personal
+            opinions and point
+         </Paragraph>
+
+         <Button theme={ETheme.PRIMARY} label="Buttonx" />
+      </Box>
+   )
 }
 
-export default App;
+export default App
